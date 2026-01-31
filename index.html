@@ -83,41 +83,94 @@
 </section>
 
 <!-- LEADERSHIP -->
-<section id="team" class="section reveal">
+<section id="leadership" class="leadership">
   <h2>Founders & Leadership</h2>
 
-  <div class="card-grid">
-    <div class="leader-card" onclick="openLeader('prajjwal')">
-      <h3>Prajjwal</h3>
-      <p>Founder</p>
-    </div>
-    <div class="leader-card" onclick="openLeader('valendu')">
-      <h3>Valendu</h3>
-      <p>Idea Developer</p>
-    </div>
-    <div class="leader-card" onclick="openLeader('gajendra')">
-      <h3>Gajendra</h3>
-      <p>Fund Raiser</p>
-    </div>
-    <div class="leader-card" onclick="openLeader('naitik')">
-      <h3>Naitik</h3>
-      <p>Manager</p>
-    </div>
-  <div class="leader-card"
-onclick="openPopup(
-'Prateek',
-'Chief Executive Officer (CEO)',
-'...',
-'images/prateek.jpg'
-)">
-  <h3>Prateek</h3>
-  <p>CEO</p>
-</div>
+  <div class="leader-grid">
 
+    <!-- CEO -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <h3>Prateek</h3>
+          <p>CEO</p>
+        </div>
+        <div class="flip-back">
+          <p>
+            Prateek leads WRO with executive vision and strategic planning,
+            guiding the organization toward sustainable growth.
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <!-- Founder -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <h3>Prajjwal</h3>
+          <p>Founder</p>
+        </div>
+        <div class="flip-back">
+          <p>
+            Graduate from Kendriya Vidyalaya, currently working at Multitech
+            Company, Momentum Gorakhpur. Believes in grassroots change.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Idea Developer -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <h3>Valendu</h3>
+          <p>Idea Developer</p>
+        </div>
+        <div class="flip-back">
+          <p>
+            Creative force behind WRO who transformed an idea into a structured
+            mission for social upliftment.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fund Raiser -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <h3>Gajendra</h3>
+          <p>Fund Raiser</p>
+        </div>
+        <div class="flip-back">
+          <p>
+            Handles financial planning and fundraising strategies to ensure
+            long-term sustainability of WRO initiatives.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Manager -->
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <h3>Naitik</h3>
+          <p>Manager</p>
+        </div>
+        <div class="flip-back">
+          <p>
+            Oversees operations, coordination, and execution to ensure smooth
+            functioning of the organization.
+          </p>
+        </div>
+      </div>
+    </div>
 
   </div>
 </section>
+
 
 <!-- SERVICES -->
 <section id="services" class="section reveal">
@@ -175,6 +228,7 @@ onclick="openPopup(
     <p id="popupAbout"></p>
   </div>
 </div>
+
 
 
 
