@@ -144,5 +144,10 @@ footer {
   transform: scale(1.08);
   box-shadow: 0 15px 35px rgba(0, 255, 213, 0.6);
 }
+.leader-card:first-child {
+  border: 2px solid #00ffd5;
+  box-shadow: 0 0 25px rgba(0,255,213,0.6);
+}
+
 
 
