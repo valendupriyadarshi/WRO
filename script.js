@@ -13,6 +13,12 @@ function openPopup(name, role, about) {
   document.getElementById("popupRole").innerText = role;
   document.getElementById("popupAbout").innerText = about;
   document.getElementById("popup").style.display = "flex";
+  function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
 }
 
 function closePopup() {
@@ -31,3 +37,4 @@ function showCentres() {
 function becomeMember() {
   alert("🚀 Coming Soon!\nStay connected with WRO.");
 }
+
