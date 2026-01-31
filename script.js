@@ -27,3 +27,7 @@ function registerAlert() {
 function showCentres() {
   alert("WRO Centres:\n\n📍 New Delhi\n📍 Noida\n📍 Ghaziabad\n📍 Lucknow");
 }
+
+function becomeMember() {
+  alert("🚀 Coming Soon!\nStay connected with WRO.");
+}
