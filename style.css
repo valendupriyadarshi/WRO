@@ -148,6 +148,68 @@ footer {
   border: 2px solid #00ffd5;
   box-shadow: 0 0 25px rgba(0,255,213,0.6);
 }
+/* Leadership Flip Cards */
+
+.leader-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.flip-card {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front & Back Common */
+.flip-front,
+.flip-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+/* Front */
+.flip-front h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.flip-front p {
+  color: #00ffd5;
+  font-weight: 600;
+}
+
+/* Back */
+.flip-back {
+  transform: rotateY(180deg);
+  font-size: 14px;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
 
 
 
