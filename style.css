@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: rgba(2,6,23,0.9);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+}
+
+nav button {
+  margin-left: 15px;
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.primary-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  background: #38bdf8;
+  color: #020617;
+  cursor: pointer;
+}
+
+.section {
+  padding: 80px 50px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.leader-card {
+  background: linear-gradient(145deg, #1e293b, #020617);
+  padding: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.leader-card:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.box, .centre {
+  background: rgba(30,41,59,0.6);
+  padding: 20px;
+  border-radius: 16px;
+  margin: 15px 0;
+}
+
+/* SCROLL ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: rgba(30,41,59,0.85);
+  backdrop-filter: blur(15px);
+  padding: 35px;
+  border-radius: 25px;
+  max-width: 500px;
+  animation: pop 0.5s ease;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.7;
+}
+
