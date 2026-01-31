@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WRO | World Research Organization</title>
+  <meta name="description" content="WRO empowers economically struggling individuals through recognition, opportunity, and support.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h1>WRO</h1>
+  <div class="nav-links">
+    <button onclick="scrollToSection('about')">About</button>
+    <button onclick="scrollToSection('mission')">Mission</button>
+    <button onclick="scrollToSection('team')">Leadership</button>
+    <button onclick="scrollToSection('services')">Services</button>
+    <button onclick="scrollToSection('centres')">Centres</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero reveal">
+  <h2>World R**** Organization</h2>
+  <p>Transforming uncertainty into opportunity</p>
+  <button class="primary-btn" onclick="scrollToSection('about')">Explore WRO</button>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+  <h2>What is WRO?</h2>
+  <p>
+    <strong>WRO (World R**** Organization)</strong> is a purpose-driven initiative
+    founded by four visionary friends to uplift individuals overlooked by society
+    and provide equal opportunities to grow, earn, and live with dignity.
+  </p>
+  <p>
+    WRO focuses on recognizing hidden potential among unemployed and economically
+    struggling individuals through structured support, guidance, and financial assistance.
+  </p>
+  <p>
+    <strong>Talent is universal, but opportunity is not — WRO bridges that gap.</strong>
+  </p>
+</section>
+
+<!-- MISSION -->
+<section id="mission" class="section reveal">
+  <h2>Our Mission</h2>
+  <ul class="animated-list">
+    <li>Support individuals facing unemployment and hardship</li>
+    <li>Create equal opportunities for all</li>
+    <li>Provide economic and growth pathways</li>
+    <li>Encourage self-reliance and collaboration</li>
+  </ul>
+</section>
+
+<!-- VISION -->
+<section class="section reveal">
+  <h2>Our Vision</h2>
+  <ul class="animated-list">
+    <li>Talent before wealth</li>
+    <li>Opportunities accessible to all</li>
+    <li>Economic challenges don’t define futures</li>
+    <li>Communities grow together</li>
+  </ul>
+</section>
+
+<!-- CORE VALUES -->
+<section class="section reveal">
+  <h2>Core Values</h2>
+  <div class="box">Integrity – Transparency & honesty</div>
+  <div class="box">Equality – Same chance for everyone</div>
+  <div class="box">Innovation – New ideas & solutions</div>
+  <div class="box">Collaboration – Growth together</div>
+  <div class="box">Social Responsibility – Impact matters</div>
+</section>
+
+<!-- LEADERSHIP -->
+<section id="team" class="section reveal">
+  <h2>Founders & Leadership</h2>
+
+  <div class="card-grid">
+    <div class="leader-card" onclick="openLeader('prajjwal')">
+      <h3>Prajjwal</h3>
+      <p>Founder</p>
+    </div>
+    <div class="leader-card" onclick="openLeader('valendu')">
+      <h3>Valendu</h3>
+      <p>Idea Developer</p>
+    </div>
+    <div class="leader-card" onclick="openLeader('gajendra')">
+      <h3>Gajendra</h3>
+      <p>Fund Raiser</p>
+    </div>
+    <div class="leader-card" onclick="openLeader('naitik')">
+      <h3>Naitik</h3>
+      <p>Manager</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section reveal">
+  <h2>What WRO Does</h2>
+  <div class="box">Economic Support</div>
+  <div class="box">Opportunity Creation</div>
+  <div class="box">Recognition Platform</div>
+  <div class="box">Community Growth</div>
+</section>
+
+<!-- CENTRES -->
+<section id="centres" class="section reveal">
+  <h2>Our Centres</h2>
+  <div class="centre">📍 New Delhi – National Coordination Centre</div>
+  <div class="centre">📍 Noida – Community Development Hub</div>
+  <div class="centre">📍 Ghaziabad – Operations Support Centre</div>
+  <div class="centre">📍 Lucknow – Regional Outreach Centre</div>
+</section>
+
+<!-- ROADMAP -->
+<section class="section reveal">
+  <h2>Future Roadmap</h2>
+  <ul class="animated-list">
+    <li>Expand centres nationwide</li>
+    <li>Launch skill programs</li>
+    <li>Create job & project marketplaces</li>
+    <li>Build a digital platform</li>
+  </ul>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 World R**** Organization (WRO)
+</footer>
+
+<!-- POPUP MODAL -->
+<div id="leaderModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeLeader()">✖</span>
+    <h2 id="leaderName"></h2>
+    <h4 id="leaderRole"></h4>
+    <p id="leaderAbout"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
